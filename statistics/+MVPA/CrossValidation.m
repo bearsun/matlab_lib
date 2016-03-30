@@ -92,6 +92,7 @@ res	= struct('error',false);
 			
 			res.chunk(bChunkDiscard)	= [];
 			d(bChunkDiscard,:)			= [];
+			res.target(bChunkDiscard)       = [];
 		
 		res.uniquechunks	= unique(res.chunk);
 		nChunk				= numel(res.uniquechunks);
